@@ -99,3 +99,11 @@
 .contacts p{
   margin-bottom: .5em;
 }
+
+@media (max-width: 768px){
+  .actions{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
