@@ -82,7 +82,7 @@
         width: 100%;
     }
 
-    ul li a{
+    ul li a, ul li p{
         align-items: center;
         display: flex;
         justify-content: center;
