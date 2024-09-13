@@ -41,7 +41,7 @@ function Navbar(){
                             <Link to="/user/profile">Perfil</Link>
                         </li>
                         <li onClick={logout}>
-                            Sair
+                            <Link>Sair</Link>
                         </li>
                     </>
                     ) : (
