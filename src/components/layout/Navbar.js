@@ -8,6 +8,8 @@ import Logo from "../../assets/img/logo.png"
 import { Context } from "../../context/UserContext"
 import { useContext } from "react"
 
+import MenuHamburguer from "../../assets/img/Menu.svg"
+
 function Navbar(){
 
     const { authenticated, logout } = useContext(Context)
@@ -18,6 +20,10 @@ function Navbar(){
                 <img src={Logo} alt="Get a Pet" />
                 <h2>Get a Pet</h2>
             </div>
+            <input type="checkbox" id='caixa-menu' className={styles.caixaMenu} />
+            <label htmlFor="caixa-menu">
+                <img src={MenuHamburguer} className={styles.cabecalho__menuHamburguer} alt='Menu' />
+            </label>
             <ul>
                 <li>
                     <Link to="/">Adotar</Link>

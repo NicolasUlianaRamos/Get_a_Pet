@@ -26,20 +26,22 @@ function Rotas(){
         <Router>
             <UserProvider>
                 <Navbar />
-                <Message />
-                <Container>
-                    <Routes>
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/register" element={<Register />} />
-                        <Route path="/user/profile" element={<Profile />} />
-                        <Route path="/pet/mypets" element={<MyPets />} />
-                        <Route path="/pet/add" element={<AddPet />} />
-                        <Route path="/pet/edit/:id" element={<EditPet />} />
-                        <Route path="/pet/myadoptions" element={<MyAdoptions />} />
-                        <Route path="/pet/:id" element={<PetDetails />} />
-                        <Route path="/" element={<Home />} />
-                    </Routes>
-                </Container>
+                <div style={{marginTop: "5em"}}>
+                    <Message />
+                    <Container>
+                        <Routes>
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/register" element={<Register />} />
+                            <Route path="/user/profile" element={<Profile />} />
+                            <Route path="/pet/mypets" element={<MyPets />} />
+                            <Route path="/pet/add" element={<AddPet />} />
+                            <Route path="/pet/edit/:id" element={<EditPet />} />
+                            <Route path="/pet/myadoptions" element={<MyAdoptions />} />
+                            <Route path="/pet/:id" element={<PetDetails />} />
+                            <Route path="/" element={<Home />} />
+                        </Routes>
+                    </Container>
+                </div>
                 <Footer />
             </UserProvider>
         </Router>

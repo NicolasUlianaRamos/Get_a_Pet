@@ -4,6 +4,9 @@
     padding: 1em 1.5em;
     background-color: #FFD400;
     color: #16479D;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar_logo{
@@ -41,4 +44,53 @@
 .navbar li:hover > a{
     background-color: #16479d;
     color: #fff;
+}
+
+
+/* Menu hamburguer */
+.navbar label{
+    background-color: var(--cor-branco);
+    display: none;
+}
+
+.caixaMenu{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .navbar label{
+        cursor: pointer;
+        display: block;
+    }
+
+    ul{
+        background-color: #FFD400;
+        flex-direction: column;
+        font-size: 20px;
+        right: -400px;
+        margin: 0;
+        position: absolute;
+        text-transform: uppercase;
+        top: 100%;
+        transition: 0.5s all;
+        width: 300px;
+    }
+
+    ul li{
+        border-bottom: 1px solid grey;
+        margin: 0;
+        width: 100%;
+    }
+
+    ul li a{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    .caixaMenu:checked ~ ul{
+        right: 0;
+    }
 }

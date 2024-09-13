@@ -63,3 +63,12 @@
     color: #25b456;
     padding: 15px;
   }
+
+  @media(max-width: 768px){
+    .pet_container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
