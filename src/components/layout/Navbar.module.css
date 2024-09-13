@@ -60,7 +60,8 @@
 @media (max-width: 768px){
     .navbar label{
         cursor: pointer;
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     ul{
